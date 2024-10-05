@@ -10,34 +10,37 @@
     android:background="#62162f">
 
     <!-- Título -->
+
+    <!-- Botões -->
+
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        android:alpha="0.5"
+        android:alpha="1"
         android:background="@drawable/rounded_background"
         android:padding="16dp"
         android:text="(Re)educando com o LCA!"
-        android:textColor="@android:color/white"
+        android:textColor="#4C6480"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Botões -->
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="393dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:columnCount="2"
         android:rowCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        tools:layout_editor_absoluteX="9dp">
 
         <!-- Primeiro botão -->
 
@@ -58,7 +61,7 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="154dp"
             android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_column="1"
@@ -71,7 +74,7 @@
         <!-- Terceiro botão -->
         <Button
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
+            android:layout_width="193dp"
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="0"
@@ -84,7 +87,7 @@
         <!-- Quarto botão -->
         <Button
             android:id="@+id/button4"
-            android:layout_width="wrap_content"
+            android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="1"
