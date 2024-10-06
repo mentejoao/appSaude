@@ -26,6 +26,13 @@
         <activity android:name=".CaracterizacaoActivity" />
         <activity android:name=".AnamneseActivity" />
         <activity android:name=".AvaliacaoFisicaActivity" />
+        <activity android:name=".ConceitoActivity" />
+        <activity android:name=".CausasActivity" />
+        <activity android:name=".AnatomiaActivity" />
+        <activity android:name=".SintomasActivity" />
+        <activity android:name=".DiagnosticoActivity" />
+        <activity android:name=".TratamentoActivity" />
+        <activity android:name=".ReferenciasActivity" />
 
     </application>
 
