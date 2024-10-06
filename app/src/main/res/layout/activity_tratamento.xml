@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TratamentoActivity">
+
+    <!-- ScrollView para permitir a rolagem do texto longo -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- TextView para exibir o texto informativo -->
+        <TextView
+            android:id="@+id/textView_conceito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Já o tratamento da hérnia de disco pode ser feito através de método
+conservador (não cirúrgico) ou cirúrgico. No tratamento conservador, o protocolo médico é de
+que se utilize uma imobilização, cintos e coletes, aliados a outras metodologias auxiliares, como
+a manipulação através de movimentos passivos leves, atividades físicas sistematizadas após o
+período de desinflamação, crioterapia, acupuntura e prescrição de medicamentos quando
+necessários como analgésicos e anti-inflamatórios (Negrelli, 2001)."
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:lineSpacingExtra="6dp"
+            android:scrollbars="vertical"/>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

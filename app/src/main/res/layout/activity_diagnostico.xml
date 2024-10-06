@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiagnosticoActivity">
+
+    <!-- ScrollView para permitir a rolagem do texto longo -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- TextView para exibir o texto informativo -->
+        <TextView
+            android:id="@+id/textView_conceito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="realizados por meio de exames físicos como o teste de força motora, teste de
+arco de movimento analisando o grau e tipo de movimento desencadeante de dor, teste de
+elevação de membro inferior e teste de alongamento femoral. Além disso, a Ressonância
+Magnética Computadorizada é o exame de imagem mais indicado para visualização da hérnia de
+disco, porém, é importante relacionar o resultado de imagem com os testes clínicos para
+diagnóstico e tratamento."
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:lineSpacingExtra="6dp"
+            android:scrollbars="vertical"/>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

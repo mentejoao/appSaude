@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConceitoActivity">
+
+    <!-- ScrollView para permitir a rolagem do texto longo -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- TextView para exibir o texto informativo -->
+        <TextView
+            android:id="@+id/textView_conceito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A hérnia discal lombar (HDL) é uma lesão que gera a ruptura do anel fibroso do disco intervertebral, presente entre as vértebras da coluna vertebral. É causada pela abertura de um orifício e vazamento do líquido gelatinoso presente no núcleo pulposo para o exterior do disco intervertebral, podendo ocorrer nas zonas central, posterolateral e foraminal, causando possível prejuízo à raiz nervosa (Silva, 2019; Tay et al., 2015)."
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:lineSpacingExtra="6dp"
+            android:scrollbars="vertical"/>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
