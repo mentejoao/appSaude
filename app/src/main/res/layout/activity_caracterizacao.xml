@@ -1,14 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
 
     <TextView
+        android:id="@+id/textView_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
         android:text="Caracterização da Lesão"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_conceito"
+        android:layout_width="207dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Conceito"
+        app:layout_constraintTop_toBottomOf="@id/textView_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_causas"
+        android:layout_width="207dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Causas"
+        app:layout_constraintTop_toBottomOf="@id/button_conceito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_anatomia"
+        android:layout_width="207dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Anatomia/Fisiologia do Joelho"
+        app:layout_constraintTop_toBottomOf="@id/button_causas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_sintomas"
+        android:layout_width="207dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Sintomas"
+        app:layout_constraintTop_toBottomOf="@id/button_anatomia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_diagnostico"
+        android:layout_width="207dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Diagnóstico"
+        app:layout_constraintTop_toBottomOf="@id/button_sintomas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_tratamento"
+        android:layout_width="207dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Tratamento"
+        app:layout_constraintTop_toBottomOf="@id/button_diagnostico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_referencias"
+        android:layout_width="207dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="76dp"
+        android:text="Referências"
+        app:layout_constraintTop_toBottomOf="@id/button_tratamento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
