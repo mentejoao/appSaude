@@ -1,169 +1,1062 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AnamneseActivity">
+    android:layout_height="match_parent">
 
-    <!-- E-mail -->
-    <TextView
-        android:id="@+id/textView_email"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="E-mail *"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        tools:context=".AnamneseActivity">
 
-    <EditText
-        android:id="@+id/editText_email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_email"
-        android:layout_marginHorizontal="16dp" />
+        <!-- E-mail -->
+        <TextView
+            android:id="@+id/textView_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail *"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
-    <!-- Data de aplicação do roteiro -->
-    <TextView
-        android:id="@+id/textView_data_aplicacao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de aplicação do roteiro *"
-        app:layout_constraintTop_toBottomOf="@id/editText_email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_email"
+            android:layout_marginHorizontal="16dp" />
 
-    <EditText
-        android:id="@+id/editText_data_aplicacao"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_data_aplicacao"
-        android:layout_marginHorizontal="16dp" />
+        <!-- Data de aplicação do roteiro -->
+        <TextView
+            android:id="@+id/textView_data_aplicacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de aplicação do roteiro *"
+            app:layout_constraintTop_toBottomOf="@id/editText_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
-    <!-- Hora de aplicação do roteiro -->
-    <TextView
-        android:id="@+id/textView_hora_aplicacao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hora de aplicação do roteiro"
-        app:layout_constraintTop_toBottomOf="@id/editText_data_aplicacao"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/editText_data_aplicacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_data_aplicacao"
+            android:layout_marginHorizontal="16dp" />
 
-    <EditText
-        android:id="@+id/editText_hora_aplicacao"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_hora_aplicacao"
-        android:layout_marginHorizontal="16dp" />
+        <!-- Hora de aplicação do roteiro -->
+        <TextView
+            android:id="@+id/textView_hora_aplicacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de aplicação do roteiro"
+            app:layout_constraintTop_toBottomOf="@id/editText_data_aplicacao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
-    <!-- Nome do avaliador -->
-    <TextView
-        android:id="@+id/textView_nome_avaliador"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nome do avaliador *"
-        app:layout_constraintTop_toBottomOf="@id/editText_hora_aplicacao"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/editText_hora_aplicacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_hora_aplicacao"
+            android:layout_marginHorizontal="16dp" />
 
-    <EditText
-        android:id="@+id/editText_nome_avaliador"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_nome_avaliador"
-        android:layout_marginHorizontal="16dp" />
+        <!-- Nome do avaliador -->
+        <TextView
+            android:id="@+id/textView_nome_avaliador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do avaliador *"
+            app:layout_constraintTop_toBottomOf="@id/editText_hora_aplicacao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
-    <!-- Função do avaliador -->
-    <TextView
-        android:id="@+id/textView_funcao_avaliador"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Função do avaliador *"
-        app:layout_constraintTop_toBottomOf="@id/editText_nome_avaliador"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/editText_nome_avaliador"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_nome_avaliador"
+            android:layout_marginHorizontal="16dp" />
 
-    <CheckBox
-        android:id="@+id/checkbox_estagiario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Estagiário"
-        app:layout_constraintTop_toBottomOf="@id/textView_funcao_avaliador"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        <!-- Função do avaliador -->
+        <TextView
+            android:id="@+id/textView_funcao_avaliador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Função do avaliador *"
+            app:layout_constraintTop_toBottomOf="@id/editText_nome_avaliador"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
-    <CheckBox
-        android:id="@+id/checkbox_profissional"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profissional"
-        app:layout_constraintTop_toBottomOf="@id/checkbox_estagiario"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        <CheckBox
+            android:id="@+id/checkbox_estagiario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estagiário"
+            app:layout_constraintTop_toBottomOf="@id/textView_funcao_avaliador"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
 
-    <TextView
-        android:id="@+id/textView_dados_praticante"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DADOS DO PRATICANTE / ALUNO / PACIENTE"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/checkbox_profissional"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        <CheckBox
+            android:id="@+id/checkbox_profissional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profissional"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_estagiario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
 
-    <TextView
-        android:id="@+id/textView_email_paciente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="E-mail"
-        app:layout_constraintTop_toBottomOf="@+id/textView_dados_praticante"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/textView_dados_praticante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DADOS DO PRATICANTE / ALUNO / PACIENTE"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_profissional"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
-    <EditText
-        android:id="@+id/editText_email_paciente"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_email_paciente"
-        android:layout_marginHorizontal="16dp" />
+        <TextView
+            android:id="@+id/textView_nome_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            app:layout_constraintTop_toBottomOf="@+id/textView_dados_praticante"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_nome_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_nome_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Data de Nascimento -->
+        <TextView
+            android:id="@+id/textView_data_nascimento_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de Nascimento *"
+            app:layout_constraintTop_toBottomOf="@id/editText_nome_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_data_nascimento_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_data_nascimento_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Idade -->
+        <TextView
+            android:id="@+id/textView_idade_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idade *"
+            app:layout_constraintTop_toBottomOf="@id/editText_data_nascimento_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_idade_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_idade_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Sexo -->
+        <TextView
+            android:id="@+id/textView_sexo_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo *"
+            app:layout_constraintTop_toBottomOf="@id/editText_idade_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_feminino_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feminino"
+            app:layout_constraintTop_toBottomOf="@id/textView_sexo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_masculino_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_feminino_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_outro_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outro"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_masculino_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Peso Atual -->
+        <TextView
+            android:id="@+id/textView_peso_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso Atual"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_outro_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_peso_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_peso_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Altura -->
+        <TextView
+            android:id="@+id/textView_altura_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altura"
+            app:layout_constraintTop_toBottomOf="@id/editText_peso_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_altura_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_altura_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Endereço Residencial e Bairro/Setor -->
+        <TextView
+            android:id="@+id/textView_endereco_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endereço Residencial e Bairro/Setor *"
+            app:layout_constraintTop_toBottomOf="@id/editText_altura_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_endereco_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_endereco_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Cidade -->
+        <TextView
+            android:id="@+id/textView_cidade_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cidade *"
+            app:layout_constraintTop_toBottomOf="@id/editText_endereco_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_cidade_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_cidade_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Telefone -->
+        <TextView
+            android:id="@+id/textView_telefone_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefone *"
+            app:layout_constraintTop_toBottomOf="@id/editText_cidade_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_telefone_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_telefone_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- E-mail -->
+        <TextView
+            android:id="@+id/textView_email_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail *"
+            app:layout_constraintTop_toBottomOf="@id/editText_telefone_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_email_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_email_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- CPF -->
+        <TextView
+            android:id="@+id/textView_cpf_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPF *"
+            app:layout_constraintTop_toBottomOf="@id/editText_email_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_cpf_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_cpf_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Profissão -->
+        <TextView
+            android:id="@+id/textView_profissao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profissão *"
+            app:layout_constraintTop_toBottomOf="@id/editText_cpf_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_profissao_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_profissao_paciente"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Escolaridade -->
+        <TextView
+            android:id="@+id/textView_escolaridade_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolaridade *"
+            app:layout_constraintTop_toBottomOf="@id/editText_profissao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_educacao_infantil_incompleto_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Educação infantil incompleto"
+            app:layout_constraintTop_toBottomOf="@id/textView_escolaridade_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_educacao_infantil_completo_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Educação infantil completo"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_educacao_infantil_incompleto_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_fundamental_incompleto_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fundamental incompleto"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_educacao_infantil_completo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_fundamental_completo_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fundamental completo"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_fundamental_incompleto_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_medio_incompleto_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médio incompleto"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_fundamental_completo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_medio_completo_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médio completo"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_medio_incompleto_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_superior_incompleto_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Superior incompleto"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_medio_completo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_superior_completo_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Superior completo"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_superior_incompleto_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_pos_graduacao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pós-graduação"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_superior_completo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_mestrado_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mestrado"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_pos_graduacao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_doutorado_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doutorado"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_mestrado_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_dados_antecedentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANTECEDENTES PESSOAIS"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_doutorado_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Tipo Sanguíneo -->
+        <TextView
+            android:id="@+id/textView_tipo_sanguineo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo Sanguíneo *"
+            app:layout_constraintTop_toBottomOf="@id/textView_dados_antecedentes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tipo_a_positivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A +"
+            app:layout_constraintTop_toBottomOf="@id/textView_tipo_sanguineo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tipo_a_negativo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A -"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_a_positivo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tipo_b_positivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B +"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_a_negativo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tipo_b_negativo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B -"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_b_positivo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tipo_ab_positivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB +"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_b_negativo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tipo_ab_negativo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB -"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_ab_positivo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tipo_o_positivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O +"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_ab_negativo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tipo_o_negativo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O -"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_o_positivo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Possui Alergias -->
+        <TextView
+            android:id="@+id/textView_alergias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Possui alergias? Se sim, diga qual(is): *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_o_negativo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_alergias_antecedentes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Especifique"
+            app:layout_constraintTop_toBottomOf="@id/textView_alergias"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Consome Tabaco -->
+        <TextView
+            android:id="@+id/textView_consumo_tabaco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consome tabaco? *"
+            app:layout_constraintTop_toBottomOf="@id/editText_alergias_antecedentes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sim_tabaco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim"
+            app:layout_constraintTop_toBottomOf="@id/textView_consumo_tabaco"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nao_tabaco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sim_tabaco"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nunca_fumei_tabaco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nunca fumei"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_nao_tabaco"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Quantidade Tabaco por Dia -->
+        <TextView
+            android:id="@+id/textView_quantidade_tabaco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantidade de tabaco/dia :"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_nunca_fumei_tabaco"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_quantidade_tabaco_antecedentes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade"
+            app:layout_constraintTop_toBottomOf="@id/textView_quantidade_tabaco"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Você Ingere Bebidas Alcoólicas -->
+        <TextView
+            android:id="@+id/textView_bebidas_alcoolicas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você ingere bebidas alcoólicas? *"
+            app:layout_constraintTop_toBottomOf="@id/editText_quantidade_tabaco_antecedentes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sim_bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim"
+            app:layout_constraintTop_toBottomOf="@id/textView_bebidas_alcoolicas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nao_bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sim_bebidas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Frequência de Ingesta de Bebidas Alcoólicas -->
+        <TextView
+            android:id="@+id/textView_frequencia_bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequência de ingesta de bebidas alcoólicas : *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_nao_bebidas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nunca_bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nunca (0)"
+            app:layout_constraintTop_toBottomOf="@id/textView_frequencia_bebidas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_mensalmente_bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensalmente ou menos (1)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_nunca_bebidas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_2_4_vezes_bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="De 2 a 4 vezes ao mês (2)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_mensalmente_bebidas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_2_3_vezes_bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="De 2 a 3 vezes na semana (3)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_2_4_vezes_bebidas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_4_mais_vezes_bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="De 4 ou mais vezes na semana (4)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_2_3_vezes_bebidas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Faz uso de outras substâncias psicoativas -->
+        <TextView
+            android:id="@+id/textView_substancias_psicoativas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faz uso de outras substâncias psicoativas? *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_4_mais_vezes_bebidas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nao_substancias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            app:layout_constraintTop_toBottomOf="@id/textView_substancias_psicoativas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sim_estimulantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim. Substâncias estimulantes (Cafeína, Nicotina, CRACK, Cocaína, Ecstasy, Anfetamina)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_nao_substancias"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sim_perturbadoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim. Substâncias perturbadoras ou alucionógenas (Maconha, LSD, PCP)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sim_estimulantes"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sim_depressoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim. Substâncias depressoras (Álcool, Morfina, Heroína, Analgésicos, Tranquilizantes)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sim_perturbadoras"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Sobre a alimentação -->
+        <TextView
+            android:id="@+id/textView_alimentacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sobre a sua alimentação, nas duas últimas semanas ela incluiu as seguintes refeições:"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sim_depressoras"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_cafe_da_manha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Café da manhã"
+            app:layout_constraintTop_toBottomOf="@id/textView_alimentacao"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_lanche_da_manha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lanche da manhã"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_cafe_da_manha"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_almoco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almoço"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_lanche_da_manha"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_lanche_da_tarde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lanche da tarde"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_almoco"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_jantar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jantar"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_lanche_da_tarde"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_ceia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ceia"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_jantar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Porções de Frutas -->
+        <TextView
+            android:id="@+id/textView_porcoes_fruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantas porções de fruta(s) você incluiu diariamente em suas refeições? *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_ceia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_1_porcao_fruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            app:layout_constraintTop_toBottomOf="@id/textView_porcoes_fruta"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_2_porcoes_fruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_1_porcao_fruta"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_3_porcoes_fruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_2_porcoes_fruta"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_4_porcoes_fruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_3_porcoes_fruta"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_5_porcoes_fruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_4_porcoes_fruta"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_6_ou_mais_porcoes_fruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 ou mais"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_5_porcoes_fruta"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Porções de Verduras -->
+        <TextView
+            android:id="@+id/textView_porcoes_verdura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantas porções de verduras você incluiu diariamente em suas refeições? *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_6_ou_mais_porcoes_fruta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_1_porcao_verdura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            app:layout_constraintTop_toBottomOf="@id/textView_porcoes_verdura"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_2_porcoes_verdura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_1_porcao_verdura"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_3_porcoes_verdura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_2_porcoes_verdura"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_4_porcoes_verdura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_3_porcoes_verdura"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_5_porcoes_verdura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_4_porcoes_verdura"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_6_ou_mais_porcoes_verdura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 ou mais"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_5_porcoes_verdura"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Consumo de água -->
+        <TextView
+            android:id="@+id/textView_consumo_agua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você consome, em média, dois litros de água diariamente: *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_6_ou_mais_porcoes_verdura"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sim_agua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim"
+            app:layout_constraintTop_toBottomOf="@id/textView_consumo_agua"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nao_agua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sim_agua"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
 
 
+        <!-- Botão Salvar -->
+        <Button
+            android:id="@+id/button_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_nao_agua"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Botão Salvar -->
-    <Button
-        android:id="@+id/button_salvar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Salvar"
-        app:layout_constraintTop_toBottomOf="@id/editText_email_paciente"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
-
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
