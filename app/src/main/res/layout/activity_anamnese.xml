@@ -544,6 +544,7 @@
             android:text="A +"
             app:layout_constraintTop_toBottomOf="@id/textView_tipo_sanguineo"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -553,6 +554,7 @@
             android:text="A -"
             app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_a_positivo"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -562,6 +564,7 @@
             android:text="B +"
             app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_a_negativo"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -571,6 +574,7 @@
             android:text="B -"
             app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_b_positivo"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -580,6 +584,7 @@
             android:text="AB +"
             app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_b_negativo"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -589,6 +594,7 @@
             android:text="AB -"
             app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_ab_positivo"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -598,6 +604,7 @@
             android:text="O +"
             app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_ab_negativo"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -607,6 +614,7 @@
             android:text="O -"
             app:layout_constraintTop_toBottomOf="@id/checkbox_tipo_o_positivo"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <!-- Possui Alergias -->
@@ -648,6 +656,7 @@
             android:text="Sim"
             app:layout_constraintTop_toBottomOf="@id/textView_consumo_tabaco"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -657,6 +666,7 @@
             android:text="Não"
             app:layout_constraintTop_toBottomOf="@id/checkbox_sim_tabaco"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -666,6 +676,7 @@
             android:text="Nunca fumei"
             app:layout_constraintTop_toBottomOf="@id/checkbox_nao_tabaco"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <!-- Quantidade Tabaco por Dia -->
@@ -707,6 +718,7 @@
             android:text="Sim"
             app:layout_constraintTop_toBottomOf="@id/textView_bebidas_alcoolicas"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -716,6 +728,7 @@
             android:text="Não"
             app:layout_constraintTop_toBottomOf="@id/checkbox_sim_bebidas"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <!-- Frequência de Ingesta de Bebidas Alcoólicas -->
@@ -736,6 +749,7 @@
             android:text="Nunca (0)"
             app:layout_constraintTop_toBottomOf="@id/textView_frequencia_bebidas"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -745,6 +759,7 @@
             android:text="Mensalmente ou menos (1)"
             app:layout_constraintTop_toBottomOf="@id/checkbox_nunca_bebidas"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -754,6 +769,7 @@
             android:text="De 2 a 4 vezes ao mês (2)"
             app:layout_constraintTop_toBottomOf="@id/checkbox_mensalmente_bebidas"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -763,6 +779,7 @@
             android:text="De 2 a 3 vezes na semana (3)"
             app:layout_constraintTop_toBottomOf="@id/checkbox_2_4_vezes_bebidas"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -772,6 +789,7 @@
             android:text="De 4 ou mais vezes na semana (4)"
             app:layout_constraintTop_toBottomOf="@id/checkbox_2_3_vezes_bebidas"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <!-- Faz uso de outras substâncias psicoativas -->
@@ -792,6 +810,7 @@
             android:text="Não"
             app:layout_constraintTop_toBottomOf="@id/textView_substancias_psicoativas"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -801,6 +820,7 @@
             android:text="Sim. Substâncias estimulantes (Cafeína, Nicotina, CRACK, Cocaína, Ecstasy, Anfetamina)"
             app:layout_constraintTop_toBottomOf="@id/checkbox_nao_substancias"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -810,6 +830,7 @@
             android:text="Sim. Substâncias perturbadoras ou alucionógenas (Maconha, LSD, PCP)"
             app:layout_constraintTop_toBottomOf="@id/checkbox_sim_estimulantes"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -819,6 +840,7 @@
             android:text="Sim. Substâncias depressoras (Álcool, Morfina, Heroína, Analgésicos, Tranquilizantes)"
             app:layout_constraintTop_toBottomOf="@id/checkbox_sim_perturbadoras"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <!-- Sobre a alimentação -->
@@ -839,6 +861,7 @@
             android:text="Café da manhã"
             app:layout_constraintTop_toBottomOf="@id/textView_alimentacao"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -848,6 +871,7 @@
             android:text="Lanche da manhã"
             app:layout_constraintTop_toBottomOf="@id/checkbox_cafe_da_manha"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -857,6 +881,7 @@
             android:text="Almoço"
             app:layout_constraintTop_toBottomOf="@id/checkbox_lanche_da_manha"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -866,6 +891,7 @@
             android:text="Lanche da tarde"
             app:layout_constraintTop_toBottomOf="@id/checkbox_almoco"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -875,6 +901,7 @@
             android:text="Jantar"
             app:layout_constraintTop_toBottomOf="@id/checkbox_lanche_da_tarde"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -884,6 +911,7 @@
             android:text="Ceia"
             app:layout_constraintTop_toBottomOf="@id/checkbox_jantar"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <!-- Porções de Frutas -->
@@ -904,6 +932,7 @@
             android:text="1"
             app:layout_constraintTop_toBottomOf="@id/textView_porcoes_fruta"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -913,6 +942,7 @@
             android:text="2"
             app:layout_constraintTop_toBottomOf="@id/checkbox_1_porcao_fruta"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -922,6 +952,7 @@
             android:text="3"
             app:layout_constraintTop_toBottomOf="@id/checkbox_2_porcoes_fruta"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -931,6 +962,7 @@
             android:text="4"
             app:layout_constraintTop_toBottomOf="@id/checkbox_3_porcoes_fruta"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -940,6 +972,7 @@
             android:text="5"
             app:layout_constraintTop_toBottomOf="@id/checkbox_4_porcoes_fruta"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -949,6 +982,7 @@
             android:text="6 ou mais"
             app:layout_constraintTop_toBottomOf="@id/checkbox_5_porcoes_fruta"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <!-- Porções de Verduras -->
@@ -969,6 +1003,7 @@
             android:text="1"
             app:layout_constraintTop_toBottomOf="@id/textView_porcoes_verdura"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -978,6 +1013,7 @@
             android:text="2"
             app:layout_constraintTop_toBottomOf="@id/checkbox_1_porcao_verdura"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -987,6 +1023,7 @@
             android:text="3"
             app:layout_constraintTop_toBottomOf="@id/checkbox_2_porcoes_verdura"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -996,6 +1033,7 @@
             android:text="4"
             app:layout_constraintTop_toBottomOf="@id/checkbox_3_porcoes_verdura"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -1005,6 +1043,7 @@
             android:text="5"
             app:layout_constraintTop_toBottomOf="@id/checkbox_4_porcoes_verdura"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -1014,6 +1053,7 @@
             android:text="6 ou mais"
             app:layout_constraintTop_toBottomOf="@id/checkbox_5_porcoes_verdura"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <!-- Consumo de água -->
@@ -1034,6 +1074,7 @@
             android:text="Sim"
             app:layout_constraintTop_toBottomOf="@id/textView_consumo_agua"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
         <CheckBox
@@ -1043,19 +1084,824 @@
             android:text="Não"
             app:layout_constraintTop_toBottomOf="@id/checkbox_sim_agua"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" />
 
+        <TextView
+            android:id="@+id/textView_horas_sono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantas horas você dorme de maneira constante, todos os dias? *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_nao_agua"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
-        <!-- Botão Salvar -->
+        <CheckBox
+            android:id="@+id/checkbox_menos_de_quatro_horas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menos de quatro horas"
+            app:layout_constraintTop_toBottomOf="@id/textView_horas_sono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_entre_quatro_e_seis_horas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entre quatro a seis horas"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_menos_de_quatro_horas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_entre_seis_e_oito_horas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entre seis a oito horas"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_entre_quatro_e_seis_horas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_mais_de_oito_horas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mais de oito horas"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_entre_seis_e_oito_horas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+        <!-- Fatores que interferem no sono -->
+        <TextView
+            android:id="@+id/textView_fatores_sono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Existem fator(es) que interferiram na qualidade do seu sono nas duas últimas semanas? *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_mais_de_oito_horas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_fatores_sono"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Descreva o(s) fator(es)"
+            app:layout_constraintTop_toBottomOf="@id/textView_fatores_sono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+        <!-- Prática de atividades físicas -->
+        <TextView
+            android:id="@+id/textView_pratica_atividade_fisica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você pratica atividades físicas? *"
+            app:layout_constraintTop_toBottomOf="@id/editText_fatores_sono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nunca_pratica_atividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nunca"
+            app:layout_constraintTop_toBottomOf="@id/textView_pratica_atividade_fisica"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_raramente_pratica_atividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raramente"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_nunca_pratica_atividade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_ocasionamente_pratica_atividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ocasionalmente"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_raramente_pratica_atividade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_frequentemente_pratica_atividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequentemente"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_ocasionamente_pratica_atividade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_muito_frequentemente_pratica_atividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muito frequentemente"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_frequentemente_pratica_atividade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Tipos de atividades físicas -->
+        <TextView
+            android:id="@+id/textView_tipos_atividade_fisica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quais atividades físicas você praticou nas duas últimas semanas: *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_muito_frequentemente_pratica_atividade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_exercicios_aerobicos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercícios aeróbicos ou de resistência"
+            app:layout_constraintTop_toBottomOf="@id/textView_tipos_atividade_fisica"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_exercicios_forca_muscular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercícios de força muscular"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_exercicios_aerobicos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_exercicios_flexibilidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercícios de flexibilidade"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_exercicios_forca_muscular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_exercicios_velocidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercícios de velocidade"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_exercicios_flexibilidade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nao_praticou_atividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não pratiquei nenhuma atividade física"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_exercicios_velocidade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_qp_hma_hmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QP, HMA E HMP"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_nao_praticou_atividade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textView_ocorrencia_hdl_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISCORRA SOBRE COMO OCORREU A HDL (INÍCIO INESPECÍFICO, TRAUMA, QUEDA, ACIDENTE)? A HDL APRESENTA RELAÇÃO COM A ROTINA DIÁRIA (TRABALHO, ESTUDO, PRÁTICAS ESPORTIVAS)?"
+            app:layout_constraintTop_toBottomOf="@id/textView_qp_hma_hmp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_ocorrencia_hdl_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_ocorrencia_hdl_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_problemas_saude_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APRESENTA OUTROS PROBLEMAS DE SAÚDE ALÉM DA HDL?..."
+            app:layout_constraintTop_toBottomOf="@id/editText_ocorrencia_hdl_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_problemas_saude_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_problemas_saude_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_medicamentos_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CITAR OS MEDICAMENTOS QUE FAZ USO COM REGULARIDADE..."
+            app:layout_constraintTop_toBottomOf="@id/editText_problemas_saude_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_medicamentos_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_medicamentos_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_sintomas_hdl_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SINALIZE OS SINTOMAS DEVIDO A HDL *"
+            app:layout_constraintTop_toBottomOf="@id/editText_medicamentos_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_parestesias_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parestesias (formigamento, dormência)"
+            app:layout_constraintTop_toBottomOf="@id/textView_sintomas_hdl_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_fraqueza_muscular_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fraqueza muscular"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_parestesias_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_perda_mobilidade_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perda de mobilidade corporal"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_fraqueza_muscular_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_rigidez_matutina_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rigidez matutina ou pós-repouso"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_perda_mobilidade_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_dor_tosse_espirro_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor por ocasião de tosse e espirro"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_rigidez_matutina_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_dor_defecacao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor por ocasião de defecação"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_dor_tosse_espirro_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_anorexia_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anorexia"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_dor_defecacao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_emagrecimento_repentino_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emagrecimento repentino"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_anorexia_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_ansiedade_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ansiedade"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_emagrecimento_repentino_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_depressao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Depressão"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_ansiedade_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_cinesiofobia_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinesiofobia"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_depressao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_outros_sintomas_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUTROS"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_cinesiofobia_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_postura_corporal_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discorra sobre a postura corporal e movimentação corporal durante o trabalho (posturas adotadas nas atividades laborais, equipamentos, mobiliários e o ambiente de trabalho): *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_outros_sintomas_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_postura_corporal_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_postura_corporal_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textView_sofa_cadeiras_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discorra sobre a característica do sofá e cadeiras utilizadas durante os momentos de descanso em casa (sofá retrátil, por exemplo): *"
+            app:layout_constraintTop_toBottomOf="@id/editText_postura_corporal_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_sofa_cadeiras_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_sofa_cadeiras_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textView_sono_colchao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discorra sobre a qualidade do sono (sono contínuo ou interrompido), característica do colchão (densidade e tipo de colchão) e travesseiro(s) utilizados rotineiramente: *"
+            app:layout_constraintTop_toBottomOf="@id/editText_sofa_cadeiras_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_sono_colchao_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_sono_colchao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textView_sinais_sintomas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SINAIS E SINTOMAS ESPECÍFICOS DA HDL"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/editText_sono_colchao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textView_inicio_sintomas_dor_lombar_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Características relativas ao início dos sintomas dolorosos na coluna lombar: *"
+            app:layout_constraintTop_toBottomOf="@id/textView_sinais_sintomas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_subito_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Súbito"
+            app:layout_constraintTop_toBottomOf="@id/textView_inicio_sintomas_dor_lombar_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_gradual_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gradual"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_subito_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_insidiosa_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insidiosa"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_gradual_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_tempo_ocorrencia_dor_lombar_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Há quanto tempo ocorreu a HDL e/ou o início dos sintomas dolorosos na coluna lombar?"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_insidiosa_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_aguda_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aguda: 0 a 6 dias"
+            app:layout_constraintTop_toBottomOf="@id/textView_tempo_ocorrencia_dor_lombar_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_subaguda_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subaguda: 7 a 21 dias"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_aguda_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_cronica_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crônica: mais de 21 dias"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_subaguda_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_duracao_dor_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qual é a duração da dor?"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_cronica_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_continua_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contínua"
+            app:layout_constraintTop_toBottomOf="@id/textView_duracao_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_intermitente_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intermitente"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_continua_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_associacao_dor_movimento_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Associação da dor lombar com movimento: *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_intermitente_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_dor_alivia_reposo_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor que alivia com o repouso"
+            app:layout_constraintTop_toBottomOf="@id/textView_associacao_dor_movimento_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_dor_piora_reposo_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor que piora com o repouso"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_dor_alivia_reposo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_dor_alivia_movimento_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor que alivia com movimento"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_dor_piora_reposo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_dor_piora_movimento_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor que piora com movimento"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_dor_alivia_movimento_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_acoes_aliviar_dor_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Citar as ações para aliviar a dor na coluna lombar: *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_dor_piora_movimento_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_acoes_aliviar_dor_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_acoes_aliviar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_acoes_piorar_dor_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Citar as ações para piorar/aumentar a dor: *"
+            app:layout_constraintTop_toBottomOf="@id/editText_acoes_aliviar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_acoes_piorar_dor_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_acoes_piorar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_tratamentos_reabilitacao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cite os tratamentos realizados até o momento da avaliação para reabilitação da HDL: *"
+            app:layout_constraintTop_toBottomOf="@id/editText_acoes_piorar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tratamento_clinico_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tratamento clínico com médico"
+            app:layout_constraintTop_toBottomOf="@id/textView_tratamentos_reabilitacao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tratamento_cirurgico_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tratamento cirúrgico (se afirmativo, passar para a próxima questão)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tratamento_clinico_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tratamento_medicamentoso_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tratamento medicamentoso (se sim, citar quais)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tratamento_cirurgico_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_fisioterapia_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fisioterapia"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_tratamento_medicamentoso_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_acupuntura_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acupuntura"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_fisioterapia_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_massoterapia_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Massoterapia"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_acupuntura_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_outro_tratamento_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outro (se afirmativo, citar quais)"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_massoterapia_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_detalhes_cirurgia_coluna_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se você já realizou cirurgia da coluna vertebral, diga qual foi a técnica de reconstrução ligamentar utilizada e há quanto tempo:"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_outro_tratamento_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_detalhes_cirurgia_coluna_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_detalhes_cirurgia_coluna_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:id="@+id/textView_laudos_exames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAUDOS E EXAMES DE IMAGEM"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/editText_detalhes_cirurgia_coluna_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+
+        <TextView
+            android:id="@+id/textView_classificacao_estagio_hdl_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classifique o estágio que atualmente se encontra a HDL (contrapor com os exames de imagem): *"
+            app:layout_constraintTop_toBottomOf="@id/textView_laudos_exames"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_classificacao_hdl_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_classificacao_estagio_hdl_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_estagio_I_paciente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estágio I - Abaulamento do Disco" />
+
+            <RadioButton
+                android:id="@+id/radio_estagio_II_paciente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estágio II - Protusão Discal" />
+
+            <RadioButton
+                android:id="@+id/radio_estagio_III_paciente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estágio III - Extrusão Discal" />
+
+            <RadioButton
+                android:id="@+id/radio_estagio_IV_paciente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estágio IV - Sequestro do Disco" />
+        </RadioGroup>
+
+
         <Button
             android:id="@+id/button_salvar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Salvar"
-            app:layout_constraintTop_toBottomOf="@id/checkbox_nao_agua"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup_classificacao_hdl_paciente"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="32dp" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
