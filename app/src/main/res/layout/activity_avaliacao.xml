@@ -1,14 +1,607 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AvaliacaoFisicaActivity">
+
+        <TextView
+            android:id="@+id/textView_alinhamento_marcha_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alinhamento e simetria da coluna vertebral (vista estática) e marcha: *"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_alinhamento_simetria_anterior_preservado_paciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Avaliação Física"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="Alinhamento e simetria anterior preservado"
+        app:layout_constraintTop_toBottomOf="@id/textView_alinhamento_marcha_paciente"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_alinhamento_simetria_anterior_alterado_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alinhamento e simetria anterior alterado"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_alinhamento_simetria_anterior_preservado_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_alinhamento_simetria_lateral_preservado_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alinhamento e simetria lateral preservado"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_alinhamento_simetria_anterior_alterado_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_alinhamento_simetria_lateral_alterado_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alinhamento e simetria lateral alterado"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_alinhamento_simetria_lateral_preservado_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_alinhamento_simetria_posterior_preservado_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alinhamento e simetria posterior preservado"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_alinhamento_simetria_lateral_alterado_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_alinhamento_simetria_posterior_alterado_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alinhamento e simetria posterior alterado"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_alinhamento_simetria_posterior_preservado_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_marcha_normal_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcha normal"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_alinhamento_simetria_posterior_alterado_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox_marcha_trendelemburg_direita_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcha com sinal de Trendelemburg à direita"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_marcha_normal_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_marcha_trendelemburg_esquerda_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcha com sinal de Trendelemburg à esquerda"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_marcha_trendelemburg_direita_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_marcha_antalgiaca_direita_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcha antálgica à direita"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_marcha_trendelemburg_esquerda_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_marcha_antalgiaca_esquerda_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcha antálgica à esquerda"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_marcha_antalgiaca_direita_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_marcha_claudicacao_direita_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcha com claudicação à direita"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_marcha_antalgiaca_esquerda_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_marcha_claudicacao_esquerda_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcha com claudicação à esquerda"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_marcha_claudicacao_direita_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView_avaliacao_postural_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avaliação Postural: *"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_marcha_claudicacao_esquerda_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_coluna_cervical_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COLUNA CERVICAL - Normal"
+        app:layout_constraintTop_toBottomOf="@id/textView_avaliacao_postural_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_coluna_cervical_dor_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COLUNA CERVICAL - Com dor"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_coluna_cervical_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_coluna_cervical_deficit_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COLUNA CERVICAL - Com déficit"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_coluna_cervical_dor_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView_deformidade_coluna_paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deformidade da coluna: *"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_coluna_cervical_deficit_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editText_deformidade_coluna_paciente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Descreva a deformidade"
+        app:layout_constraintTop_toBottomOf="@id/textView_deformidade_coluna_paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine"
+        android:lines="2"/>
+
+        <TextView
+            android:id="@+id/textView_sinal_romberg_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sinal de Romberg: *"
+            app:layout_constraintTop_toBottomOf="@id/editText_deformidade_coluna_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sinal_romberg_negativo_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negativo"
+            app:layout_constraintTop_toBottomOf="@id/textView_sinal_romberg_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sinal_romberg_positivo_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positivo"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sinal_romberg_negativo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_face_anterior_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Face anterior (Crista Íliaca, EIAS, sínfise púbica e articulações importantes):"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sinal_romberg_positivo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_face_anterior_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Descreva a face anterior"
+            app:layout_constraintTop_toBottomOf="@id/textView_face_anterior_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:inputType="textMultiLine"
+            android:lines="2"/>
+
+        <TextView
+            android:id="@+id/textView_face_posterior_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Face Posterior (Processos espinhosos, Crista Ilíaca, EIPS, etc.):"
+            app:layout_constraintTop_toBottomOf="@id/editText_face_anterior_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_face_posterior_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Descreva a face posterior"
+            app:layout_constraintTop_toBottomOf="@id/textView_face_posterior_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:inputType="textMultiLine"
+            android:lines="2"/>
+
+        <TextView
+            android:id="@+id/textView_musculos_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Músculos (reto abdominal, eretores da espinha, etc.):"
+            app:layout_constraintTop_toBottomOf="@id/editText_face_posterior_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText_musculos_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Descreva os músculos"
+            app:layout_constraintTop_toBottomOf="@id/textView_musculos_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:inputType="textMultiLine"
+            android:lines="2"/>
+
+        <TextView
+            android:id="@+id/textView_flexao_coluna_lombar_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flexão - coluna lombar: *"
+            app:layout_constraintTop_toBottomOf="@id/editText_musculos_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_coluna_lombar_normal_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            app:layout_constraintTop_toBottomOf="@id/textView_flexao_coluna_lombar_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_coluna_lombar_restricao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restrição de ADM"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_coluna_lombar_normal_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_coluna_lombar_compensacao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compensação"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_coluna_lombar_restricao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_coluna_lombar_dor_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor referida"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_coluna_lombar_compensacao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_avaliacao_funcional_geral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AVALIAÇÃO FUNCIONAL GERAL"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_coluna_lombar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textView_flexiteste_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FLEXITESTE (ARAUJO, 2004; ARAUJO, 2013)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/textView_avaliacao_funcional_geral"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento1_dorsiflexao_tornozelo_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 1: Dorsiflexão de tornozelo (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/textView_flexiteste_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento2_flexao_plantar_tornozelo_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 2: Flexão plantar de tornozelo (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento1_dorsiflexao_tornozelo_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento3_flexao_joelho_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 3: Flexão de joelho (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento2_flexao_plantar_tornozelo_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento4_extensao_joelho_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 4: Extensão de joelho (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento3_flexao_joelho_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento5_flexao_quadril_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 5: Flexão de quadril (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento4_extensao_joelho_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento6_extensao_quadril_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 6: Extensão de quadril (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento5_flexao_quadril_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento7_aducao_quadril_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 7: Adução de quadril (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento6_extensao_quadril_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento8_abducao_quadril_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 8: Abdução de quadril (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento7_aducao_quadril_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento9_flexao_tronco_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 9: Flexão do tronco (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento8_abducao_quadril_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento10_extensao_tronco_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 10: Extensão do tronco (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento9_flexao_tronco_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento11_flexao_lateral_tronco_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 11: Flexão lateral do tronco (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento10_extensao_tronco_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento12_flexao_punho_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 12: Flexão de punho (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento11_flexao_lateral_tronco_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento13_extensao_punho_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 13: Extensão de punho (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento12_flexao_punho_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento14_flexao_cotovelo_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 14: Flexão de cotovelo (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento13_extensao_punho_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento15_extensao_cotovelo_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 15: Extensão de cotovelo (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento14_flexao_cotovelo_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento16_aducao_posterior_ombro_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 16: Adução posterior do ombro (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento15_extensao_cotovelo_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento17_extensao_ad_posterior_ombro_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 17: Extensão + adução posterior (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento16_aducao_posterior_ombro_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento18_extensao_posterior_ombro_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 18: Extensão posterior do ombro (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento17_extensao_ad_posterior_ombro_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento19_rotacao_lateral_ombro_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 19: Rotação lateral do ombro (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento18_extensao_posterior_ombro_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editText_movimento20_rotacao_medial_ombro_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Movimento 20: Rotação medial do ombro (0-4)"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento19_rotacao_lateral_ombro_paciente"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textView_teste_adams_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teste de Adams"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/editText_movimento20_rotacao_medial_ombro_paciente"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_gibosidade_presente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gibosidade Presente"
+            app:layout_constraintTop_toBottomOf="@id/textView_teste_adams_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_gibosidade_ausente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gibosidade Ausente"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_gibosidade_presente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:id="@+id/textView_avaliacao_especifica_col_lombar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AVALIAÇÃO FUNCIONAL ESPECÍFICA DA COLUNA LOMBAR"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_gibosidade_ausente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/button_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            app:layout_constraintTop_toBottomOf="@id/textView_avaliacao_especifica_col_lombar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
