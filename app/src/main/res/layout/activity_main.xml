@@ -21,7 +21,7 @@
         android:alpha="1"
         android:background="@drawable/rounded_background"
         android:padding="16dp"
-        android:text="(Re)educando com o LCA!"
+        android:text="Lombar Care"
         android:textColor="#4C6480"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
@@ -41,10 +41,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titleTextView"
         tools:layout_editor_absoluteX="18dp">
-
-        <!-- Primeiro botão -->
-
-        <!-- Segundo botão -->
 
         <Button
             android:id="@+id/button1"

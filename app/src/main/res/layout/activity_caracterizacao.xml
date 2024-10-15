@@ -45,7 +45,7 @@
         android:layout_height="64dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
-        android:text="Anatomia/Fisiologia do Joelho"
+        android:text="Anatomia/Fisiologia da Coluna Vertebral"
         app:layout_constraintTop_toBottomOf="@id/button_causas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

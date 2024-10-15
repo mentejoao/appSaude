@@ -20,7 +20,7 @@
             android:id="@+id/textView_conceito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="o disco intervertebral é uma estrutura que tem como principais funções estabilizar
+            android:text="O disco intervertebral é uma estrutura que tem como principais funções estabilizar
 os corpos vertebrais, permitir a movimentação articular, além de absorver e distribuir as cargas
 mecânicas causadas a coluna vertebral (Silva, 2019). O disco intervertebral é composto por uma
 matriz extra-celular de proteoglicanos e colágeno; o anel fibroso que é uma camada externa
