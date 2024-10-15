@@ -221,6 +221,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp" />
 
+
         <CheckBox
             android:id="@+id/checkbox_sinal_romberg_negativo_paciente"
             android:layout_width="wrap_content"
@@ -240,11 +241,23 @@
             android:layout_marginTop="8dp" />
 
         <TextView
+            android:id="@+id/textView_palpacao_estruturas_criticas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PALPAÇÃO DE ESTRUTURAS CRÍTICAS"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sinal_romberg_positivo_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
             android:id="@+id/textView_face_anterior_paciente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Face anterior (Crista Íliaca, EIAS, sínfise púbica e articulações importantes):"
-            app:layout_constraintTop_toBottomOf="@id/checkbox_sinal_romberg_positivo_paciente"
+            app:layout_constraintTop_toBottomOf="@id/textView_palpacao_estruturas_criticas"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp" />
 
@@ -303,11 +316,23 @@
             android:lines="2"/>
 
         <TextView
+            android:id="@+id/textView_mobilizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOBILIZAÇÃO"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/editText_musculos_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
             android:id="@+id/textView_flexao_coluna_lombar_paciente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Flexão - coluna lombar: *"
-            app:layout_constraintTop_toBottomOf="@id/editText_musculos_paciente"
+            app:layout_constraintTop_toBottomOf="@id/textView_mobilizacao"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp" />
 
@@ -348,16 +373,243 @@
             android:layout_marginTop="8dp" />
 
         <TextView
+            android:id="@+id/textView_extensao_coluna_lombar_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extensão - coluna lombar: *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_coluna_lombar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_extensao_coluna_lombar_normal_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            app:layout_constraintTop_toBottomOf="@id/textView_extensao_coluna_lombar_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_extensao_coluna_lombar_restricao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restrição de ADM"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_extensao_coluna_lombar_normal_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_extensao_coluna_lombar_compensacao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compensação"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_extensao_coluna_lombar_restricao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_extensao_coluna_lombar_dor_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor referida"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_extensao_coluna_lombar_compensacao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_flexao_lateral_direita_coluna_lombar_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flexão Lateral Direita - coluna lombar: *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_extensao_coluna_lombar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_lateral_direita_coluna_lombar_normal_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            app:layout_constraintTop_toBottomOf="@id/textView_flexao_lateral_direita_coluna_lombar_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_lateral_direita_coluna_lombar_restricao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restrição de ADM"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_lateral_direita_coluna_lombar_normal_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_lateral_direita_coluna_lombar_compensacao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compensação"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_lateral_direita_coluna_lombar_restricao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_lateral_direita_coluna_lombar_dor_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor referida"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_lateral_direita_coluna_lombar_compensacao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_flexao_lateral_esquerda_coluna_lombar_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flexão Lateral Esquerda - coluna lombar: *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_lateral_direita_coluna_lombar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_lateral_esquerda_coluna_lombar_normal_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            app:layout_constraintTop_toBottomOf="@id/textView_flexao_lateral_esquerda_coluna_lombar_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_lateral_esquerda_coluna_lombar_restricao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restrição de ADM"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_lateral_esquerda_coluna_lombar_normal_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_lateral_esquerda_coluna_lombar_compensacao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compensação"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_lateral_esquerda_coluna_lombar_restricao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flexao_lateral_esquerda_coluna_lombar_dor_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor referida"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_lateral_esquerda_coluna_lombar_compensacao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_rotacao_direita_coluna_lombar_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotação Direita - coluna lombar: *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_lateral_esquerda_coluna_lombar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_rotacao_direita_coluna_lombar_normal_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            app:layout_constraintTop_toBottomOf="@id/textView_rotacao_direita_coluna_lombar_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_rotacao_direita_coluna_lombar_restricao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restrição de ADM"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_rotacao_direita_coluna_lombar_normal_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_rotacao_direita_coluna_lombar_compensacao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compensação"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_rotacao_direita_coluna_lombar_restricao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_rotacao_direita_coluna_lombar_dor_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor referida"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_rotacao_direita_coluna_lombar_compensacao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView_rotacao_esquerda_coluna_lombar_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotação Esquerda - coluna lombar: *"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_rotacao_direita_coluna_lombar_dor_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_rotacao_esquerda_coluna_lombar_normal_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            app:layout_constraintTop_toBottomOf="@id/textView_rotacao_esquerda_coluna_lombar_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_rotacao_esquerda_coluna_lombar_restricao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restrição de ADM"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_rotacao_esquerda_coluna_lombar_normal_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_rotacao_esquerda_coluna_lombar_compensacao_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compensação"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_rotacao_esquerda_coluna_lombar_restricao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_rotacao_esquerda_coluna_lombar_dor_paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dor referida"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_rotacao_esquerda_coluna_lombar_compensacao_paciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
             android:id="@+id/textView_avaliacao_funcional_geral"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AVALIAÇÃO FUNCIONAL GERAL"
             android:textStyle="bold"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/checkbox_flexao_coluna_lombar_dor_paciente"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_rotacao_esquerda_coluna_lombar_dor_paciente"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp" />
+
+
 
         <TextView
             android:id="@+id/textView_flexiteste_paciente"
